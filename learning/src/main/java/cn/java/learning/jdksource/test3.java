@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
- * Description:
+ * Description: 用栈来实现括号的校验
  * Author: lxl
  * Date: 2017/1/18 13:48
  */
