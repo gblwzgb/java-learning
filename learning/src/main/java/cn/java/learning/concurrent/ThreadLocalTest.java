@@ -18,6 +18,7 @@ public class ThreadLocalTest {
 }
 
 class Tools {
+    //可以有多个ThreadLocal，线程的ThreadLocalMap里的key就是ThreadLocal的引用，而value就是具体的泛型变量的值。
     public static ThreadLocal<String> threadLocal = new ThreadLocal<String>();
 }
 
