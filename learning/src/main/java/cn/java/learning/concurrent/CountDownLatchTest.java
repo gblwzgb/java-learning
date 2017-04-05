@@ -27,7 +27,7 @@ public class CountDownLatchTest {
                     //模拟耗时任务
                     try {
                         //相比于Thread.sleep()，这个方法可纳秒，微秒，毫秒，秒，分钟，小时，天
-                        TimeUnit.SECONDS.sleep(10);   //可以学习一下这个枚举类。
+                        TimeUnit.SECONDS.sleep(timer);   //可以学习一下这个枚举类。
                         System.out.printf("%s时完成磁盘的统计任务，耗时%d秒.\n", new Date().toString(), timer);
                         //任务完成，计数器减一
                         count.countDown();
