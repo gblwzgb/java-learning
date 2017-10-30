@@ -1,5 +1,7 @@
 package cn.java.learning.concurrent;
 
+import org.apache.log4j.Logger;
+
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.*;
@@ -9,6 +11,9 @@ import java.util.concurrent.*;
  * 所有选手准备完毕之后，才可以同时起跑。
  */
 public class CyclicBarrierTest {
+
+    private static final Logger LOGGER = Logger.getLogger(CyclicBarrierTest.class);
+
     private static CyclicBarrier cyclicBarrier = new CyclicBarrier(8);
     private static ExecutorService service = Executors.newFixedThreadPool(10);  //一定要比8大，跑道都不够，会堵住的。。
 
