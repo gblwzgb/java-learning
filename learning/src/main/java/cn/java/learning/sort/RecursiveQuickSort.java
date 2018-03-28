@@ -23,13 +23,13 @@ public class RecursiveQuickSort {
         if (i > j) {
             return;
         }
-        int pivot = array[left];  //将最左边的数字作为基准数。
-        while (i != j) {  //当i=j时，说明循环完毕，开始递归
-            while (array[j] >= pivot && i < j)  //从后往前找，直到找到小于基准数的下标j
+        int pivot = array[left];  // 将最左边的数字作为基准数。
+        while (i != j) {  // 当i=j时，说明循环完毕，开始递归
+            while (array[j] >= pivot && i < j)  // 从后往前找，直到找到小于基准数的下标j
                 j--;
-            while (array[i] <= pivot && i < j)  //从前往后找，直到找到大于基准数的下标i
+            while (array[i] <= pivot && i < j)  // 从前往后找，直到找到大于基准数的下标i
                 i++;
-            if (i < j) {  //交换两数的位置
+            if (i < j) {  // 交换两数的位置
                 temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;

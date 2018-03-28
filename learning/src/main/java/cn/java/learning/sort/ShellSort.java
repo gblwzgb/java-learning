@@ -1,7 +1,8 @@
 package cn.java.learning.sort;
 
 /**
- * 希尔排序
+ * 希尔排序，在插入排序的基础上增加了步长
+ * 我的理解是，在插入排序的时候，比较并移动的次数太多了。而希尔排序可以跨越多个元素进行比较并交换，减少了比较、交换的次数。
  */
 public class ShellSort {
     public static void main(String[] args) {

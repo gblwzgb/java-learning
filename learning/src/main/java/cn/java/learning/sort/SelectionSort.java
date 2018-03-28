@@ -7,6 +7,7 @@ package cn.java.learning.sort;
  *      从未排好的部分的第一个作为最小（最大）的，
  *      然后依次和剩余的比较，如果有更小（更大）的，
  *      记下下标，以此作为新的最小（最大）值，继续比较，一趟结束后，然后和第一个进行交换。
+ * 不稳定排序，时间复杂度最好和最坏都和冒泡一样。
  */
 public class SelectionSort {
     public static void main(String[] args) {

@@ -24,6 +24,7 @@ public class NonBlockingSocketServer {
             SocketChannel sc = ssc.accept();
             if (sc == null) {
                 // 如果当前没有数据，等待1秒钟再次轮询是否有数据，在学习了Selector之后此处可以使用Selector
+                System.out.println("没有数据，等待1秒");  //因为ServerSocketChannel设置了非阻塞，所以没有数据前这里会一直输出
                 Thread.sleep(1000);
             } else {
                 System.out.println("客户端已有数据到来，客户端ip为:" + sc.socket().getRemoteSocketAddress()

@@ -9,8 +9,9 @@ public class BubbleSort {
         int[] array = {3, 4, 5, 6, 8, 2, 12};
         int length = array.length;
         int temp;
-        for (int i = 0; i < length; i++) {
-            for (int j = 0; j < length - 1; j++) {
+        for (int i = 0; i < length - 1; i++) {  // 外层循环指定内层循环的次数
+            // 内层循环每执行一次，说明已经有一个数字排好了，这时内层比较次数就要少一次
+            for (int j = 0; j < length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
                     temp = array[j];
                     array[j] = array[j + 1];
